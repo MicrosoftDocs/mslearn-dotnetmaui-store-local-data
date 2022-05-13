@@ -16,8 +16,7 @@ namespace People
 
         private void Init()
         {
-            // TODO: Add code to initialize the repository
-
+            // TODO: Add code to initialize the repository         
         }
 
         public PersonRepository(string dbPath)
