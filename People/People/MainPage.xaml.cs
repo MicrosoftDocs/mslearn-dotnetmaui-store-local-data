@@ -1,6 +1,4 @@
-﻿
-
-namespace People;
+﻿namespace People;
 
 public partial class MainPage : ContentPage
 {
