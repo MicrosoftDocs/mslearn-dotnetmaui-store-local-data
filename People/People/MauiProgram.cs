@@ -13,6 +13,8 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-		return builder.Build();
+		// TODO: Add statements for adding PersonRepository as a singleton
+			
+        return builder.Build();
 	}
 }
