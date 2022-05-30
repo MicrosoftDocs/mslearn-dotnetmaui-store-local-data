@@ -24,7 +24,7 @@ namespace People
             _dbPath = dbPath;                        
         }
 
-        public void AddNewPerson(string name)
+        public async Task AddNewPerson(string name)
         {            
             int result = 0;
             try
@@ -47,12 +47,11 @@ namespace People
 
         }
 
-        public <List<Person> GetAllPeople()
+        public async Task<List<Person>> GetAllPeople()
         {
-            // TODO: Init then retrieve a list of Person objects from the database into a list
             try
             {
-                
+                // TODO: Init then retrieve a list of Person objects from the database into a list
             }
             catch (Exception ex)
             {
