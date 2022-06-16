@@ -47,7 +47,7 @@ namespace People
 
         }
 
-        public <List<Person> GetAllPeople()
+        public <List<Person>> GetAllPeople()
         {
             // TODO: Init then retrieve a list of Person objects from the database into a list
             try
