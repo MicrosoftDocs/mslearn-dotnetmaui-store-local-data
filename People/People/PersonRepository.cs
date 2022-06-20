@@ -31,7 +31,7 @@ namespace People
             {
                 // TODO: Call Init()
 
-                //basic validation to ensure a name was entered
+                // basic validation to ensure a name was entered
                 if (string.IsNullOrEmpty(name))
                     throw new Exception("Valid name required");
 
@@ -47,7 +47,7 @@ namespace People
 
         }
 
-        public <List<Person> GetAllPeople()
+        public List<Person> GetAllPeople()
         {
             // TODO: Init then retrieve a list of Person objects from the database into a list
             try
