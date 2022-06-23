@@ -11,7 +11,7 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-    public async void OnNewButtonClicked(object sender, EventArgs args)
+    public void OnNewButtonClicked(object sender, EventArgs args)
     {
         statusMessage.Text = "";
 
@@ -19,7 +19,7 @@ public partial class MainPage : ContentPage
         statusMessage.Text = App.PersonRepo.StatusMessage;
     }
 
-    public async void OnGetButtonClicked(object sender, EventArgs args)
+    public void OnGetButtonClicked(object sender, EventArgs args)
     {
         statusMessage.Text = "";
 
