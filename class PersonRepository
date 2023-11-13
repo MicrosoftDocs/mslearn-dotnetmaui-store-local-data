@@ -1,0 +1,23 @@
+Привет, я возмождно ошбиаюся но в вашем уроке я нашел небоьшую проблему из-за которой не работает вся программа. 
+в вашем уроке напсанно так:
+class PersonRepository
+"private void Init()
+{
+   if (conn != null)
+      return;
+
+   conn = new SQLiteConnection(_dbPath);
+   conn.CreateTable<Person>();
+}"
+
+Но в висуал студио появляется така ошибка: "System.NullReferenceException: "Object reference not set to an instance of an object."
+
+Чтобы испраить эту ошбику нужно напистаь так:
+"private void Init()
+{
+    conn = new SQLiteConnection(_dbPath);
+    if (conn == null)
+        return;
+
+    conn.CreateTable<Person>();
+}"
