@@ -2,15 +2,17 @@
 
 public partial class App : Application
 {
-    // TODO: Add a public static PersonRepository property
+	public static PersonRepository PersonRepo { get; private set; }
 
-    public App()
+	public App()
 	{
 		InitializeComponent();
+		// TODO: Initialize the PersonRepository property with the PersonRespository singleton object
 
-		MainPage = new AppShell();
+	}
 
-        // TODO: Initialize the PersonRepository property with the PersonRespository singleton object
-
-    }
+	protected override Window CreateWindow(IActivationState activationState)
+	{
+		return new Window(new AppShell());
+	}
 }

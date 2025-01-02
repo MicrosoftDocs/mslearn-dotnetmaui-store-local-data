@@ -1,4 +1,6 @@
-﻿namespace People;
+﻿using Microsoft.Extensions.Logging;
+
+namespace People;
 
 public static class MauiProgram
 {
@@ -13,8 +15,12 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
+#if DEBUG
+		builder.Logging.AddDebug();
+#endif
+
 		// TODO: Add statements for adding PersonRepository as a singleton
-			
-        return builder.Build();
+
+		return builder.Build();
 	}
 }

@@ -1,4 +1,6 @@
-﻿namespace People;
+﻿using People.Models;
+
+namespace People;
 
 public class PersonRepository
 {
